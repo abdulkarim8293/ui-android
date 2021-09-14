@@ -4,21 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".user_interface_1.SignUpActivity">
+    tools:context=".user_interface.ui_3.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/signUpTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="32dp"
         android:text="Sign Up"
         android:textSize="26sp"
         android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
         android:id="@+id/userNameEt"
@@ -67,6 +77,8 @@
         android:layout_marginTop="16dp"
         android:padding="16dp"
         android:text="Create Account"
+        android:textColor="@color/white"
+        android:background="@drawable/button_gradient"
         app:layout_constraintEnd_toEndOf="@id/passwordEt"
         app:layout_constraintStart_toStartOf="@id/passwordEt"
         app:layout_constraintTop_toBottomOf="@id/passwordEt" />
@@ -98,7 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Facebook"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
@@ -119,7 +131,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:text="Google"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/createAccountBtn"
         app:layout_constraintTop_toTopOf="@+id/imageView2" />

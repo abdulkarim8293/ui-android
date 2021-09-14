@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_layout"
-    tools:context=".user_interface_2.LoginTwoActivity">
+    tools:context=".user_interface.ui_2.Login2Activity">
 
     <TextView
         android:id="@+id/sloganTv"
