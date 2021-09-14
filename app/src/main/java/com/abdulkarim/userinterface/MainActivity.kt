@@ -10,6 +10,7 @@ import com.abdulkarim.userinterface.adapter.UserInterfaceAdapter
 import com.abdulkarim.userinterface.listener.OnItemClickListener
 import com.abdulkarim.userinterface.model.ListItem
 import com.abdulkarim.userinterface.user_interface_1.LoginActivity
+import com.abdulkarim.userinterface.user_interface_2.LoginTwoActivity
 
 class MainActivity : AppCompatActivity(),OnItemClickListener {
 
@@ -21,7 +22,8 @@ class MainActivity : AppCompatActivity(),OnItemClickListener {
         setContentView(R.layout.activity_main)
 
         val listItem = ArrayList<ListItem>()
-        listItem.add(ListItem("User Registration One","There are two page sign up and sing in page"))
+        listItem.add(ListItem(AppConstant.LOGIN_PAGE_1,"Two edit text and one button.Button are customize"))
+        listItem.add(ListItem(AppConstant.LOGIN_PAGE_2,"There are two page sign up and sing in page"))
 
         recyclerView = findViewById(R.id.recyclerView)
         userInterfaceAdapter = UserInterfaceAdapter(listItem,this)
@@ -35,8 +37,16 @@ class MainActivity : AppCompatActivity(),OnItemClickListener {
 
     override fun onItemClick(listItem: ListItem) {
 
-        Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show()
-        startActivity(Intent(this,LoginActivity::class.java))
+        when(listItem.title){
+            AppConstant.LOGIN_PAGE_1 ->{
+                startActivity(Intent(this,LoginActivity::class.java))
+            }
+            AppConstant.LOGIN_PAGE_2 ->{
+                startActivity(Intent(this,LoginTwoActivity::class.java))
+            }
+
+        }
+
     }
 
 }
