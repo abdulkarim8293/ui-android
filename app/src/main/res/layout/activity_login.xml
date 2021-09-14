@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_interface_1.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loginTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/userIdEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:hint="@string/user_id_email_id_mobile_no"
+        android:drawableLeft="@drawable/ic_person_24"
+        app:layout_constraintEnd_toEndOf="@+id/loginTv"
+        app:layout_constraintStart_toStartOf="@id/loginTv"
+        app:layout_constraintTop_toBottomOf="@id/loginTv" />
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="8dp"
+        android:hint="@string/mobile_number"
+        android:drawableLeft="@drawable/ic_key_24"
+        app:layout_constraintEnd_toEndOf="@id/userIdEt"
+        app:layout_constraintStart_toStartOf="@id/userIdEt"
+        app:layout_constraintTop_toBottomOf="@id/userIdEt" />
+
+    <Button
+        android:id="@+id/createAccountBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/log_in"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_gradient"
+        app:layout_constraintEnd_toEndOf="@id/passwordEt"
+        app:layout_constraintStart_toStartOf="@id/passwordEt"
+        app:layout_constraintTop_toBottomOf="@id/passwordEt" />
+
+    <TextView
+        android:id="@+id/orTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/or"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/createAccountBtn"
+        app:layout_constraintStart_toStartOf="@id/createAccountBtn"
+        app:layout_constraintTop_toBottomOf="@id/createAccountBtn" />
+
+    <ImageView
+        android:id="@+id/facebookIv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintStart_toStartOf="@+id/createAccountBtn"
+        app:layout_constraintTop_toBottomOf="@+id/orTv" />
+
+    <TextView
+        android:id="@+id/facebookTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/facebook"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/facebookIv"
+        app:layout_constraintStart_toEndOf="@+id/facebookIv"
+        app:layout_constraintTop_toTopOf="@+id/facebookIv"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <ImageView
+        android:id="@+id/googleIv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ic_google"
+        app:layout_constraintBottom_toBottomOf="@+id/facebookIv"
+        app:layout_constraintEnd_toStartOf="@+id/googleTv"
+        app:layout_constraintTop_toTopOf="@+id/facebookIv" />
+
+    <TextView
+        android:id="@+id/googleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/google"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/googleIv"
+        app:layout_constraintEnd_toEndOf="@+id/createAccountBtn"
+        app:layout_constraintTop_toTopOf="@+id/googleIv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

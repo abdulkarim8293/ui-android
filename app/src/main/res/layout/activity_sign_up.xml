@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_interface_1.SignUpActivity">
+
+    <TextView
+        android:id="@+id/signUpTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="32dp"
+        android:text="Sign Up"
+        android:textSize="26sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userNameEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="User Name / User Id"
+        app:layout_constraintEnd_toEndOf="@+id/signUpTv"
+        app:layout_constraintStart_toStartOf="@id/signUpTv"
+        app:layout_constraintTop_toBottomOf="@id/signUpTv" />
+
+    <EditText
+        android:id="@+id/emailIdEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Email Id"
+        app:layout_constraintEnd_toEndOf="@+id/userNameEt"
+        app:layout_constraintStart_toStartOf="@id/userNameEt"
+        app:layout_constraintTop_toBottomOf="@id/userNameEt" />
+
+    <EditText
+        android:id="@+id/mobileNumberEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Mobile Number"
+        app:layout_constraintEnd_toEndOf="@id/emailIdEt"
+        app:layout_constraintStart_toStartOf="@id/emailIdEt"
+        app:layout_constraintTop_toBottomOf="@id/emailIdEt" />
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="@id/mobileNumberEt"
+        app:layout_constraintStart_toStartOf="@id/mobileNumberEt"
+        app:layout_constraintTop_toBottomOf="@id/mobileNumberEt" />
+
+    <Button
+        android:id="@+id/createAccountBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:text="Create Account"
+        app:layout_constraintEnd_toEndOf="@id/passwordEt"
+        app:layout_constraintStart_toStartOf="@id/passwordEt"
+        app:layout_constraintTop_toBottomOf="@id/passwordEt" />
+
+    <TextView
+        android:id="@+id/orTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Or"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/createAccountBtn"
+        app:layout_constraintStart_toStartOf="@id/createAccountBtn"
+        app:layout_constraintTop_toBottomOf="@id/createAccountBtn" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintStart_toStartOf="@+id/createAccountBtn"
+        app:layout_constraintTop_toBottomOf="@id/orTv" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Facebook"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ic_google"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Google"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/createAccountBtn"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

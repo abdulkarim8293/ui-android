@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">User Interface</string>
+    <string name="login">Login</string>
+    <string name="user_id_email_id_mobile_no">User Id / Email Id / Mobile No</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="log_in">Log In</string>
+    <string name="or">Or</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+</resources>
