@@ -10,14 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UserInterface">
         <activity
+            android:name=".user_interface_2.LoginTwoActivity"
+            android:exported="true" />
+        <activity
             android:name=".user_interface_1.LoginActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".user_interface_1.SignUpActivity"
             android:exported="true" />
