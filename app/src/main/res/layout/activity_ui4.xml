@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_interface.ui_4.Ui4Activity">
+
+    <ImageView
+        android:id="@+id/logoIv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_dolphin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dolphyTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/dolphy"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/logoIv"
+        app:layout_constraintStart_toStartOf="@+id/logoIv"
+        app:layout_constraintTop_toBottomOf="@+id/logoIv" />
+
+    <TextView
+        android:id="@+id/appstaTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appsta"
+        app:layout_constraintEnd_toEndOf="@+id/dolphyTv"
+        app:layout_constraintStart_toStartOf="@+id/dolphyTv"
+        app:layout_constraintTop_toBottomOf="@+id/dolphyTv" />
+
+    <TextView
+        android:id="@+id/signUpTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/sign_up"
+        android:textSize="24sp"
+        android:textStyle="bold|normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appstaTv" />
+
+    <TextView
+        android:id="@+id/singUpNowTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/sign_up"
+        android:textSize="24sp"
+        android:textStyle="bold|normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appstaTv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

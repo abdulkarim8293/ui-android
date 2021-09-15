@@ -3,6 +3,7 @@ package com.abdulkarim.userinterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.abdulkarim.userinterface.adapter.UserInterfaceAdapter
@@ -21,6 +22,10 @@ class MainActivity : AppCompatActivity(),OnItemClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar?.title = "User Interface"
 
         val listItem = ArrayList<ListItem>()
         listItem.add(ListItem(AppConstant.LOGIN_PAGE_1,"Two edit text and one button.Button are customize"))

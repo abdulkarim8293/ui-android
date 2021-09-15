@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UserInterface">
         <activity
+            android:name=".bkash_ui.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".user_interface.ui_4.Ui4Activity"
+            android:exported="true" />
+        <activity
             android:name=".user_interface.ui_2.Login2Activity"
             android:exported="true" />
         <activity

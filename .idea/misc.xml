@@ -7,11 +7,15 @@
         <entry key="..\:/Users/Karim/AndroidStudioProjects/UserInterface/app/src/main/res/drawable/bg_triangle_150.xml" value="0.3828125" />
         <entry key="..\:/Users/Karim/AndroidStudioProjects/UserInterface/app/src/main/res/drawable/button_gradient.xml" value="0.3828125" />
         <entry key="..\:/Users/Karim/AndroidStudioProjects/UserInterface/app/src/main/res/drawable/edit_text_bg.xml" value="0.3828125" />
+        <entry key="..\:/Users/Karim/AndroidStudioProjects/UserInterface/app/src/main/res/drawable/ic_card_giftcard_24.xml" value="0.3828125" />
+        <entry key="..\:/Users/Karim/AndroidStudioProjects/UserInterface/app/src/main/res/drawable/layout_background.xml" value="0.3828125" />
         <entry key="..\:/Users/Karim/AndroidStudioProjects/UserInterface/app/src/main/res/drawable/layout_bg.xml" value="0.3828125" />
         <entry key="..\:/Users/Karim/AndroidStudioProjects/UserInterface/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Karim/AndroidStudioProjects/UserInterface/app/src/main/res/layout/activity_login_two.xml" value="0.33" />
+        <entry key="..\:/Users/Karim/AndroidStudioProjects/UserInterface/app/src/main/res/layout/activity_login_two.xml" value="0.25" />
         <entry key="..\:/Users/Karim/AndroidStudioProjects/UserInterface/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Karim/AndroidStudioProjects/UserInterface/app/src/main/res/layout/activity_sign_up.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Karim/AndroidStudioProjects/UserInterface/app/src/main/res/layout/activity_ui4.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Karim/AndroidStudioProjects/UserInterface/app/src/main/res/layout/activity_welcome.xml" value="0.33" />
         <entry key="..\:/Users/Karim/AndroidStudioProjects/UserInterface/app/src/main/res/layout/item_user_interface.xml" value="0.36666666666666664" />
       </map>
     </option>
