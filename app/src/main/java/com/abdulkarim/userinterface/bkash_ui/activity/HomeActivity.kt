@@ -1,45 +1,42 @@
-package com.abdulkarim.userinterface.bkash_ui
+package com.abdulkarim.userinterface.bkash_ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.constraintlayout.widget.Group
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.abdulkarim.userinterface.R
 import com.abdulkarim.userinterface.adapter.MyBkashAdapter
 import com.abdulkarim.userinterface.adapter.UserInterfaceAdapter
 import com.abdulkarim.userinterface.bkash_ui.fragment.HomeFragment
+import com.abdulkarim.userinterface.bkash_ui.fragment.InboxFragment
 
 class HomeActivity : AppCompatActivity() {
 
-    private lateinit var myBkashAdapter: MyBkashAdapter
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
+        loadFragment(HomeFragment())
+
         val home = findViewById<Group>(R.id.homeGroup)
+        val inbox = findViewById<Group>(R.id.inboxGroup)
 
         home.setOnClickListener {
-            Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show()
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container,HomeFragment()).commit()
-
+            loadFragment(HomeFragment())
         }
 
-        val list = ArrayList<String>()
-        list.add("Title One")
-        list.add("Title Two")
-        list.add("Title Three")
+        inbox.setOnClickListener {
+            loadFragment(InboxFragment())
+        }
 
-        myBkashAdapter = MyBkashAdapter(list)
-        val recyclerView = findViewById<RecyclerView>(R.id.balanceDetailsRv)
-        recyclerView.setHasFixedSize(true)
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = myBkashAdapter
+    }
 
-
-
+    private fun loadFragment(fragment:Fragment){
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_container,fragment).commit()
     }
 }

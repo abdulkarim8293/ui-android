@@ -3,41 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="4dp"
     android:elevation="8dp"
-    android:layout_width="match_parent"
+    android:layout_width="120dp"
     android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/titleTv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:paddingTop="4dp"
-            android:paddingBottom="4dp"
-            android:text="Title"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+        <ImageView
+            android:id="@+id/cardIv"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sky_logo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/descriptionTv"
+            android:id="@+id/titleTv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:paddingTop="4dp"
-            android:paddingBottom="4dp"
-            android:text="Description"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/titleTv"
-            app:layout_constraintStart_toStartOf="@+id/titleTv"
-            app:layout_constraintTop_toBottomOf="@+id/titleTv" />
+            android:gravity="center"
+            android:text="Title"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/cardIv"
+            app:layout_constraintStart_toStartOf="@+id/cardIv"
+            app:layout_constraintTop_toBottomOf="@+id/cardIv" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

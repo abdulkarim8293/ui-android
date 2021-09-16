@@ -27,7 +27,7 @@ class MyBkashAdapter(private val list: List<String>)  : RecyclerView.Adapter<MyB
 
     class MyViewHolder(itemView:View) : RecyclerView.ViewHolder(itemView){
         val  title:TextView = itemView.findViewById(R.id.titleTv)
-        val  description:TextView = itemView.findViewById(R.id.descriptionTv)
+
     }
 
 }
